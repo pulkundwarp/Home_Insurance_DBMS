@@ -1,7 +1,7 @@
 # Home_Insurance_DBMS
 
 ## Database Topic
-Home Insurance
+Home Insurance Database Management System
 
 ## Database Purpose:
 The objective of the Home Insurance Database is to maintain acquired data and establish a foundation for an organization to strategically analyze existing and potential client information thereby speeding up the underwriting department’s decision making and risk evaluation. The database can be used by all the departments (finance, legal, claims, underwriting, marketing) present in the organization. The database can assist in the diversification of finances, investments and calculating policy premiums, tracking policyholder details, property condition, and policy features resulting in continued growth and sustainability.
