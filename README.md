@@ -58,19 +58,15 @@ The objective of the Home Insurance Database is to maintain acquired data and es
 
 | Entity Name | Why is this entity included? | How is this entity related to other entities? |
 | :---         |     :---:      |          ---: |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| CasePortal | “CasePortal” holds general information about the new cases. This is a basic entity in the database which contains “start_date”, “end_date”, “house_id”, and “customer_id” of the enquiry. It also collects information about deductibles and limits. Deductible is the amount of money a houseowner must pay from their pocket before house insurance coverage is claimed. When the insurance company pays the claim, it will be for the total damage amount minus the amount of the deductible. A limit is the highest amount the insurance company will have to pay for a claim that the insurance policy covers. Hence, this information is crucial to be stored in the database for future usage when the company must calculate the amount of claim to be paid. | The “CasePortal” entity is related to the “CustomerInfo” via its primary key, “customer_id” to store all the basic information about the customer. Similarly, “CasePortal” has foreign key “house_id” which ties to “HouseInfo”. The company will be able to view detailed house information by using the foreign key “house_id” for investigation of house. “CasePortal" is connected to CoverageOptions via an associative entity “CaseCoverage” to maintain the many to many relationships. |
+| CustomerInfo |  |  |
+| CustomerSource |  |  |
+| CaseCoverage |  |  |
+| CoverageOptions |  |  |
+| HouseInfo |  |  |
+| Address |  |  |
+| CommunityEnvironment |  |  |
+| ClaimHistory |  |  |
+| Payments |  |  |
+| InternalPossession |  |  |
+| SecuritySystem |  |  |
