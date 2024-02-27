@@ -55,3 +55,8 @@ The objective of the Home Insurance Database is to maintain acquired data and es
   - To strategically plan the investment of the capital gains from various products of the company
   - To extract the information about the premium amount charged to forecast the number of claims that would be filed
   - To determine the threshold premium amount of the collectible utilities by analyzing thecost/value bracket of distinct categories of items as requested by the customer
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
