@@ -6,67 +6,10 @@ Home Insurance Database Management System
 ## Database Purpose:
 The objective of the Home Insurance Database is to maintain acquired data and establish a foundation for an organization to strategically analyze existing and potential client information thereby speeding up the underwriting department’s decision making and risk evaluation. The database can be used by all the departments (finance, legal, claims, underwriting, marketing) present in the organization. The database can assist in the diversification of finances, investments and calculating policy premiums, tracking policyholder details, property condition, and policy features resulting in continued growth and sustainability.
 
-## Database Objective:
-  - To maintain (enter, update, and delete) data on customers
-  - To maintain (enter, update, and delete) data on neighborhoods
-  - To maintain (enter, update, and delete) data on houses
-  - To maintain (enter, update, and delete) data on contents
-  - To maintain (enter, update, and delete) data on customer agents
-  - To maintain (enter, update, and delete) data on house claims history
-  - To maintain (enter, update, and delete) data on customer claims history
-  - To maintain (enter, update, and delete) data on natural environment conditions
-  - To maintain (enter, update, and delete) data on addresses
-  - To maintain (enter, update, and delete) data on house conditions
-  - To maintain (enter, update, and delete) data on house existing coverage
-  - To maintain (enter, update, and delete) data on customer’s expected coverage
-  - To perform searches on customers
-  - To perform searches on neighborhoods
-  - To perform searches on houses
-  - To perform searches on contents
-  - To perform searches on customer agents
-  - To perform searches on house claims history
-  - To perform searches on customer claims history
-  - To perform searches on natural environmental conditions
-  - To perform searches on addresses
-  - To perform searches on house conditions
-  - To perform searches on house existing coverage
-  - To perform searches on customers expected coverage
-  - To track the customer claims history by customers
-  - To track the contents by houses
-  - To track the customer's expected coverage by houses
-  - To track the natural environmental conditions by the address
-  - To report on customers
-  - To report on neighborhoods
-  - To report on houses
-  - To report on contents
-  - To report on customer agents
-  - To report on house claims history
-  - To report on customer claims history
-  - To report on natural environmental conditions
-  - To report on addresses
-  - To report on house conditions
-  - To report on house existing coverage
-  - To report on customer’s expected coverage
-
-  - To maintain(enter, update, and delete), track, perform and report the several attributes present in all entities to enable easy access and detailed analysis of data
-  - To Determine the number of homes which have house mapping scores greater than average and to find the number of homes which have less risk of getting damaged due to extreme weather conditions
-  - Supporting the management team to strategically build a team of most efficient agents based on the number of clients brought in by them
-  - Querying the information of any popular policy or product across a certain demographic from the database which will provide valuable information to build product marketing strategies
-  - To strategically plan the investment of the capital gains from various products of the company
-  - To extract the information about the premium amount charged to forecast the number of claims that would be filed
-  - To determine the threshold premium amount of the collectible utilities by analyzing thecost/value bracket of distinct categories of items as requested by the customer
-
-| Entity Name | Why is this entity included? | How is this entity related to other entities? |
-| :---         |     :---:      |          ---: |
-| CasePortal | “CasePortal” holds general information about the new cases. This is a basic entity in the database which contains “start_date”, “end_date”, “house_id”, and “customer_id” of the enquiry. It also collects information about deductibles and limits. Deductible is the amount of money a houseowner must pay from their pocket before house insurance coverage is claimed. When the insurance company pays the claim, it will be for the total damage amount minus the amount of the deductible. A limit is the highest amount the insurance company will have to pay for a claim that the insurance policy covers. Hence, this information is crucial to be stored in the database for future usage when the company must calculate the amount of claim to be paid. | The “CasePortal” entity is related to the “CustomerInfo” via its primary key, “customer_id” to store all the basic information about the customer. Similarly, “CasePortal” has foreign key “house_id” which ties to “HouseInfo”. The company will be able to view detailed house information by using the foreign key “house_id” for investigation of house. “CasePortal" is connected to CoverageOptions via an associative entity “CaseCoverage” to maintain the many to many relationships. |
-| CustomerInfo |  |  |
-| CustomerSource |  |  |
-| CaseCoverage |  |  |
-| CoverageOptions |  |  |
-| HouseInfo |  |  |
-| Address |  |  |
-| CommunityEnvironment |  |  |
-| ClaimHistory |  |  |
-| Payments |  |  |
-| InternalPossession |  |  |
-| SecuritySystem |  |  |
+## Business Problem Addressed:
+  - Maintain (enter, update, and delete), track, and report detailed information for each potential new case, enable the easy access and detailed analysis of the database.
+  - Evaluate house conditions and risk of getting damaged based on the company's internal rating system. Provide an initial insurance price combining information of internal possessions values, community environment as well as house insurance history.
+  - Query the information of any popular insurance coverage across a certain demographic from the database which can be helpful to provide valuable information to build and expand product marketing strategies
+  - Optimize the insurance coverage pricing strategy and maintain a balance between a high gross profit rate and a high customer engagement rate.
+  - Extract customer source reports from the database and estimate advertisement efficiency in different platforms like social media, house agencies and flyers.
+  - Generate data to analyze customer's features like address, age, education, and credit scores to figure out insurance preference in different customer segments. Then design more effective marketing strategies.
